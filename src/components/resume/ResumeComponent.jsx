@@ -6,7 +6,7 @@ import pdf from '../../assets/AnshuResume.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  'https://raw.githubusercontent.com/Madhavkabra/Portfolio/master/src/Assets/Resume%20Madhav%202023%20Dated.pdf';
+  'https://github.com/anshuER/portfolio/blob/main/src/assets/AnshuResume.pdf';
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
