@@ -5,9 +5,6 @@ import pdf from '../../assets/AnshuResume.pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resumeLink =
-  'https://github.com/anshuER/portfolio/blob/main/src/assets/AnshuResume.pdf';
-
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
@@ -43,8 +40,9 @@ function ResumeNew() {
         </div>
 
         <div className='py-12 flex justify-center flex-wrap '>
+          {/* <iframe src={resumeLink} /> */}
           <Document
-            file={resumeLink}
+            file={pdf}
             className='d-flex flex-column align-items-center justify-content-center '
           >
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} wrap />
